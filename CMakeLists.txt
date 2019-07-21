@@ -10,5 +10,5 @@ else(CURL_FOUND)
   message(FATAL_ERROR "CURL not found")
 endif(CURL_FOUND)
 
-add_executable(gamesdbscraper src/main.cpp src/json.hpp src/HttpClient.h src/HttpClient.cpp)
+add_executable(gamesdbscraper src/main.cpp src/json.hpp src/HttpClient.h src/HttpClient.cpp src/Filesystem.cpp src/Filesystem.h)
 target_link_libraries(gamesdbscraper curl)
